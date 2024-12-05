@@ -4,7 +4,7 @@ Lesson on the 5th of December with Niklas
 ## API:er 
 - När det kommer till API:Er och när man gör en Fetch-förfrågan så måste dess options, så är GET standard, och dem vanligaste är ju GET; POST; PUT och DELETE: Om man inte skriver någonting, så är det per automatik GET som körs
 
-``` 
+```js 
 const options = {
   method: "POST",
 };
@@ -14,7 +14,7 @@ const options = {
 
 Vanligt att specificera Content-Type när du skickar JSON-data.
 
-```
+```js
 const options = {
   headers: {
     "Content-Type": "application/json",
@@ -25,7 +25,8 @@ const options = {
 - body: Innehåller data som du skickar till servern. Vanligtvis JSON-strängar.
 
 Används endast med metoder som skickar data (som POST och PUT).
-´´´
+
+```js
 const options = {
   method: "POST",
   headers: {
@@ -36,7 +37,7 @@ const options = {
     email: "john.doe@example.com",
   }),
 };
-´´´
+```
 
 
 
